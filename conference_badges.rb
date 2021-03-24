@@ -17,5 +17,5 @@ end
 
 def printer(speaker)
   batch_badge_creator(speaker).each {|badges|  puts badges}
-  assign_rooms(speaker).each {|room_assignment| puts {room_assignment}
+  assign_rooms(speaker).each {|room_assignment| puts room_assignment}
 end
