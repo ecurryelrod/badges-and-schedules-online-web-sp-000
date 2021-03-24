@@ -4,11 +4,11 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(speaker)
-  speaker.collect do |name|
-    badge_maker(name)
+  speaker.each do |name|
+    puts "Hello, my name is #{name}."
   end
 end
-
+badge_maker(name)
 def assign_rooms(speaker)
   speaker.each.with_index(1) do |name, room|
     puts "Hello, #{name}! You'll be assigned to room #{room}!"
